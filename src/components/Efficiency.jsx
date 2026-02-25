@@ -39,8 +39,8 @@ const Efficiency = () => {
                                     <span className="material-symbols-outlined text-accent-cyan">savings</span>
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-lg dark:text-white">Save at least 50% on every collateral move</h4>
-                                    <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Drastically reduce swap fees compared to standard aggregator routes. Never pay 0.25% + 0.05% execution fees again.</p>
+                                    <h4 className="font-bold text-lg dark:text-white">Save up to 67% on every collateral move</h4>
+                                    <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Drastically reduce swap fees compared to standard aggregator routes. Never pay 0.25% protocol + 0.05% execution fees again.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4">

@@ -13,9 +13,9 @@ import Footer from './components/Footer';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Default to true, or use saved preference
+    // Default to false (light), or use saved preference
     const saved = localStorage.getItem('lilswap_theme');
-    return saved !== null ? saved === 'dark' : true;
+    return saved !== null ? saved === 'dark' : false;
   });
 
   useEffect(() => {
