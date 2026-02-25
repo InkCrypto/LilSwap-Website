@@ -6,9 +6,21 @@
 
 @custom-variant dark (&:is(.dark *));
 
+:root {
+    --color-primary-base: #643ab6;
+    --color-primary-hover-base: #502d94;
+}
+
+.dark {
+    --color-primary-base: #8b5cf6;
+    /* medium-light purple, balanced with the logo */
+    --color-primary-hover-base: #a78bfa;
+    /* lighter on hover */
+}
+
 @theme {
-    --color-primary: #643ab6;
-    --color-primary-hover: #502d94;
+    --color-primary: var(--color-primary-base);
+    --color-primary-hover: var(--color-primary-hover-base);
     --color-accent-cyan: #22d3ee;
     --color-accent-orange: #fb923c;
     --color-background-light: #f8fafc;
