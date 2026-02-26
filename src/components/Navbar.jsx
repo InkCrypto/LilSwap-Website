@@ -71,11 +71,14 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-20">
 
                     {/* Logo Section */}
-                    <div className="flex items-center gap-2 min-w-0">
+                    <button
+                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                        className="flex items-center gap-2 min-w-0 cursor-pointer group"
+                    >
                         <div className="shrink-0 flex items-center justify-center">
-                            <LilLogo className="w-10 h-10 sm:w-12 sm:h-12" />
+                            <LilLogo className="w-10 h-10 sm:w-12 sm:h-12 transition-transform group-hover:scale-105" />
                         </div>
-                        <div className="min-w-0 flex flex-col justify-center">
+                        <div className="min-w-0 flex flex-col justify-start text-left">
                             <div className="flex items-center gap-2 leading-none">
                                 <h1 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 dark:text-white tracking-tight">
                                     LilSwap
@@ -86,11 +89,11 @@ const Navbar = () => {
                                 <span className="text-[9px] sm:text-[10px] font-bold text-slate-500 uppercase tracking-[0.15em] sm:tracking-[0.2em]">{t('navbar.subtitle')}</span>
                             </div>
                         </div>
-                    </div>
+                    </button>
 
                     {/* Desktop Navigation Links */}
                     <div className="hidden lg:flex items-center space-x-8">
-                        <button onClick={() => scrollTo('dashboard')} className="text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer">{t('navbar.features')}</button>
+                        <button onClick={() => scrollTo('features')} className="text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer">{t('navbar.features')}</button>
                         <button onClick={() => scrollTo('comparison')} className="text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer">{t('navbar.advantages')}</button>
                         <button onClick={() => scrollTo('savings')} className="text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer">{t('navbar.savings')}</button>
                         <button onClick={() => scrollTo('roadmap')} className="text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer">{t('navbar.roadmap')}</button>
