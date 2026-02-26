@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import LogosSection from './components/LogosSection';
-import DashboardPreview from './components/DashboardPreview';
-import Features from './components/Features';
-import Comparison from './components/Comparison';
-import Efficiency from './components/Efficiency';
-import Roadmap from './components/Roadmap';
-import FAQ from './components/FAQ';
-import CTA from './components/CTA';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Docs from './pages/Docs';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -31,19 +23,17 @@ function App() {
   const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
 
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <LogosSection />
-      <DashboardPreview />
-      <Features />
-      <Comparison />
-      <Efficiency />
-      <Roadmap />
-      <FAQ />
-      <CTA />
-      <Footer isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-    </>
+    <Router>
+      <div className="min-h-screen bg-white dark:bg-[#0A0516] transition-colors duration-300 flex flex-col">
+        <main className="flex-grow flex flex-col">
+          <Routes>
+            <Route path="/" element={<Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />} />
+            <Route path="/docs" element={<Docs />} />
+            <Route path="*" element={<Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 

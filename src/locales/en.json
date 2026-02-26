@@ -10,8 +10,8 @@
     },
     "hero": {
         "tagline": "Fee-Optimized Interface",
-        "title1": "Cost-Efficiency",
-        "title2": "Aave Position Manager",
+        "title1": "Smarter Aave",
+        "title2": "Position Manager",
         "description": "The smart alternative for managing Aave v3 lending positions. Swap debt with 0% execution fees and save up to 67% on collateral swaps compared to the official interface.",
         "accessApp": "Access App",
         "docs": "Docs",
@@ -23,11 +23,24 @@
             "smartContractCall": "Direct Protocol Access",
             "instant": "Instant",
             "settlement": "Atomic Execution"
-        },
-        "howItWorks": {
-            "title": "How it works:",
-            "desc1": "LilSwap acts as a lean execution layer directly on top of Aave's smart contracts.",
-            "desc2": "Since we only execute transactions against existing smart contracts, your funds remain securely in Aave, we just provide a cheaper, more efficient route for you."
+        }
+    },
+    "howItWorks": {
+        "title": "Built for simplicity",
+        "subtitle": "No deposits, no migration. Just connect and optimize.",
+        "steps": {
+            "connect": {
+                "title": "1. Connect Wallet",
+                "desc": "Instantly load your active lending positions without any deposits or migrations."
+            },
+            "review": {
+                "title": "2. Review Portfolio",
+                "desc": "Track your net worth, health factor, and cross-chain metrics in one unified view."
+            },
+            "execute": {
+                "title": "3. Execute Swaps",
+                "desc": "Repay debt or swap collateral securely taking advantage of optimized routes."
+            }
         }
     },
     "logosSection": {
@@ -52,7 +65,7 @@
         "title": "DeFi Made Cost-Efficient",
         "items": {
             "efficiency": {
-                "title": "Built for Maximum Fee Efficiency",
+                "title": "Maximize Your Yield",
                 "desc1": "A simple, straight-to-the-point interface focused on optimizing your lending position swaps without extra fees. Our architecture is lean by design so you save as much as possible.",
                 "desc2": "Only pay network gas, no added adapter fees for debt switching. Execute pure 0% fee debt swaps directly via our dashboard."
             },
@@ -166,6 +179,13 @@
         "title": "Ready to optimize your yield?",
         "subtitle": "Start managing your lending positions with optimized execution fees and maximum efficiency.",
         "button": "Swap Now"
+    },
+    "docs": {
+        "title1": "Documentation",
+        "title2": "Coming Soon",
+        "description": "We're working hard to prepare comprehensive documentation for LilSwap. Stay tuned!",
+        "backToHome": "Back to Home",
+        "accessApp": "Access App"
     },
     "footer": {
         "tagline": "The ultimate interface for DeFi power users.",

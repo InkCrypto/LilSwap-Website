@@ -1,14 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { ExternalLink, FileText } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     const { t } = useTranslation();
     return (
         <header className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full bg-hero-pattern opacity-50 pointer-events-none"></div>
-            <div className="absolute top-20 right-0 w-96 h-96 bg-accent-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
-            <div className="absolute bottom-0 left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-hero-pattern opacity-20 dark:opacity-[0.07] pointer-events-none"></div>
+            <div className="absolute top-20 right-0 w-80 h-80 bg-accent-cyan/5 dark:bg-accent-cyan/10 rounded-full blur-[100px] pointer-events-none"></div>
+            <div className="absolute bottom-0 left-20 w-64 h-64 bg-primary/5 dark:bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8">
@@ -36,10 +37,10 @@ const Hero = () => {
                         <span className="inline">{t('hero.accessApp')}</span>
                         <ExternalLink className="w-4 h-4" />
                     </a>
-                    <button disabled className="w-full sm:w-auto bg-slate-100 dark:bg-slate-800/30 border border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-500 px-8 py-3.5 rounded-xl font-bold transition-all text-sm sm:text-base flex items-center justify-center gap-2 cursor-not-allowed">
-                        <FileText className="w-4 h-4 text-slate-400 dark:text-slate-500" />
-                        <span className="inline flex items-center gap-2">{t('hero.docs')} <span className="text-[10px] uppercase bg-slate-200 dark:bg-slate-700/50 text-slate-500 dark:text-slate-400 px-1.5 py-0.5 rounded font-bold">{t('hero.soon')}</span></span>
-                    </button>
+                    <Link to="/docs" className="w-full sm:w-auto bg-slate-100 dark:bg-slate-800/30 border border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-500 hover:text-primary dark:hover:text-primary px-8 py-3.5 rounded-xl font-bold transition-all text-sm sm:text-base flex items-center justify-center gap-2 group">
+                        <FileText className="w-4 h-4 text-slate-400 dark:text-slate-500 transition-colors group-hover:text-primary" />
+                        <span className="inline flex items-center gap-2">{t('hero.docs')} <span className="text-[10px] uppercase bg-slate-200 dark:bg-slate-700/50 text-slate-500 dark:text-slate-400 px-1.5 py-0.5 rounded font-bold transition-colors group-hover:text-primary group-hover:bg-primary/10">{t('hero.soon')}</span></span>
+                    </Link>
                 </div>
 
                 <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 max-w-4xl mx-auto border-t border-border-light dark:border-border-dark pt-8">
@@ -61,10 +62,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="mt-8 max-w-xl mx-auto text-center bg-blue-50/50 dark:bg-blue-900/10 border border-blue-200 dark:border-blue-800 rounded-xl p-5 text-sm text-slate-600 dark:text-slate-400 shadow-sm">
-                    <p className="mb-2"><span className="font-bold text-primary">{t('hero.howItWorks.title')}</span> {t('hero.howItWorks.desc1')}</p>
-                    <p>{t('hero.howItWorks.desc2')}</p>
-                </div>
+
             </div>
         </header>
     );

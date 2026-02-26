@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const LilLogo = ({ className = "w-6 h-6" }) => (
     <svg
@@ -115,8 +116,8 @@ const Footer = ({ isDarkMode, toggleDarkMode }) => {
                                 <span className="text-xs font-medium">{isDarkMode ? t('footer.lightOff') : t('footer.lightOn')}</span>
                                 <span
                                     className={`material-symbols-outlined text-[20px] leading-none transition-all duration-300 ${isDarkMode
-                                            ? 'text-slate-500 dark:text-slate-600 group-hover:text-slate-400'
-                                            : 'text-yellow-400 group-hover:text-yellow-500 drop-shadow-[0_0_6px_rgba(250,204,21,0.7)]'
+                                        ? 'text-slate-500 dark:text-slate-600 group-hover:text-slate-400'
+                                        : 'text-yellow-400 group-hover:text-yellow-500 drop-shadow-[0_0_6px_rgba(250,204,21,0.7)]'
                                         }`}
                                     style={{ fontVariationSettings: isDarkMode ? "'FILL' 0, 'GRAD' 0" : "'FILL' 1, 'GRAD' 200" }}
                                 >
@@ -140,17 +141,12 @@ const Footer = ({ isDarkMode, toggleDarkMode }) => {
                         <h4 className="font-bold mb-4 dark:text-white">{t('footer.resources.title')}</h4>
                         <ul className="space-y-2 text-sm text-slate-500 dark:text-slate-400">
                             <li>
-                                <span className="text-slate-400 dark:text-slate-500 flex items-center gap-2 cursor-not-allowed select-none">
+                                <Link to="/docs" className="text-slate-400 dark:text-slate-500 flex items-center gap-2 hover:text-primary transition group select-none">
                                     {t('footer.resources.docs')}
-                                    <span className="text-[10px] uppercase bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 px-1.5 py-0.5 rounded font-bold">{t('footer.resources.soon')}</span>
-                                </span>
+                                    <span className="text-[10px] uppercase bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 px-1.5 py-0.5 rounded font-bold group-hover:text-primary group-hover:bg-primary/10 transition">{t('footer.resources.soon')}</span>
+                                </Link>
                             </li>
-                            <li>
-                                <span className="text-slate-400 dark:text-slate-500 flex items-center gap-2 cursor-not-allowed select-none">
-                                    {t('footer.resources.api')}
-                                    <span className="text-[10px] uppercase bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 px-1.5 py-0.5 rounded font-bold">{t('footer.resources.soon')}</span>
-                                </span>
-                            </li>
+
                             {/* <li><a className="hover:text-primary transition" href="#">Audits</a></li> */}
                             {/* <li><a className="hover:text-primary transition" href="#">Brand Kit</a></li> */}
                         </ul>

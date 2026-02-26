@@ -26,18 +26,34 @@ const Features = () => {
                                 </p>
                             </div>
 
-                            <div className="mt-8 flex gap-3">
-                                <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700">
-                                    <img src="/icons/networks/ethereum.svg" alt="Ethereum" className="w-full h-full object-contain" />
-                                </div>
-                                <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700">
-                                    <img src="/icons/networks/base.svg" alt="Base" className="w-full h-full object-contain" />
-                                </div>
-                                <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700">
-                                    <img src="/icons/networks/polygon.svg" alt="Polygon" className="w-full h-full object-contain" />
-                                </div>
-                                <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700">
-                                    <img src="/icons/networks/binance.svg" alt="BNB Chain" className="w-full h-full object-contain" />
+                            <div className="mt-8 border-t border-slate-100 dark:border-slate-800 pt-6">
+                                <h4 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">{t('logosSection.title')}</h4>
+                                <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+                                    <div className="flex gap-2 sm:gap-3">
+                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors">
+                                            <img src="/icons/networks/ethereum.svg" alt="Ethereum" className="w-full h-full object-contain" />
+                                        </div>
+                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors">
+                                            <img src="/icons/networks/base.svg" alt="Base" className="w-full h-full object-contain" />
+                                        </div>
+                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors">
+                                            <img src="/icons/networks/polygon.svg" alt="Polygon" className="w-full h-full object-contain" />
+                                        </div>
+                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors">
+                                            <img src="/icons/networks/binance.svg" alt="BNB Chain" className="w-full h-full object-contain" />
+                                        </div>
+                                    </div>
+                                    <div className="hidden sm:flex items-center gap-3">
+                                        <div className="flex -space-x-4">
+                                            <div className="w-8 h-8 rounded-full border-2 border-white dark:border-card-dark bg-white dark:bg-slate-800 p-1.5 z-10 shadow-sm relative"><img src="/icons/networks/gnosis.svg" alt="Gnosis" className="w-full h-full object-contain" /></div>
+                                            <div className="w-8 h-8 rounded-full border-2 border-white dark:border-card-dark bg-white dark:bg-slate-800 p-1.5 z-20 shadow-sm relative"><img src="/icons/networks/avalanche.svg" alt="Avalanche" className="w-full h-full object-contain" /></div>
+                                            <div className="w-8 h-8 rounded-full border-2 border-white dark:border-card-dark bg-white dark:bg-slate-800 p-1.5 z-30 shadow-sm relative"><img src="/icons/networks/arbitrum.svg" alt="Arbitrum" className="w-full h-full object-contain" /></div>
+                                            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white border-2 border-white dark:border-card-dark shadow-md z-40 transform translate-x-1 relative">
+                                                <span className="material-symbols-outlined text-[14px] font-bold">add</span>
+                                            </div>
+                                        </div>
+                                        <span className="text-[10px] font-bold text-slate-400 tracking-wide uppercase ml-2">{t('logosSection.moreComing')}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

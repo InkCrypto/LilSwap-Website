@@ -10,8 +10,8 @@
     },
     "hero": {
         "tagline": "Interface com Taxas Otimizadas",
-        "title1": "Máxima Eficiência de Custo",
-        "title2": "no Gerenciamento da Aave",
+        "title1": "Gerenciamento Inteligente",
+        "title2": "das Posições Aave",
         "description": "A alternativa inteligente para gerenciar suas posições de empréstimo na Aave V3. Faça swaps de dívida com 0% de taxa de execução e economize até 67% nos swaps de colateral em comparação com a interface oficial.",
         "accessApp": "Acessar App",
         "docs": "Docs",
@@ -23,11 +23,24 @@
             "smartContractCall": "Acesso Direto ao Protocolo",
             "instant": "Instantâneo",
             "settlement": "Execução Atômica"
-        },
-        "howItWorks": {
-            "title": "Como funciona:",
-            "desc1": "A LilSwap atua como uma camada de execução leve e direta aos contratos da Aave.",
-            "desc2": "Como apenas executamos transações usando os smart contracts que já existem, seus fundos continuam 100% seguros na Aave. Nós simplesmente oferecemos a rota mais barata e eficiente para você."
+        }
+    },
+    "howItWorks": {
+        "title": "Feito para ser simples",
+        "subtitle": "Sem depósitos, sem migração. Apenas conecte e otimize.",
+        "steps": {
+            "connect": {
+                "title": "1. Conecte sua Carteira",
+                "desc": "Carregue instantaneamente suas posições de lending ativas sem nenhum depósito ou migração."
+            },
+            "review": {
+                "title": "2. Analise seu Portfólio",
+                "desc": "Acompanhe seu patrimônio livre, health factor e métricas cross-chain em uma tela unificada."
+            },
+            "execute": {
+                "title": "3. Execute Swaps",
+                "desc": "Pague dívidas ou troque colaterais com segurança aproveitando as rotas otimizadas."
+            }
         }
     },
     "logosSection": {
@@ -52,7 +65,7 @@
         "title": "DeFi Altamente Rentável",
         "items": {
             "efficiency": {
-                "title": "Construído para Máxima Eficiência",
+                "title": "Maximize Seus Ganhos",
                 "desc1": "Uma interface simples, direta ao ponto e focada em otimizar a troca das suas posições de lending sem pagar taxas extras. Nossa arquitetura é extremamente enxuta para você economizar o máximo possível.",
                 "desc2": "Pague apenas o gas da rede, sem taxas adicionais de adaptadores ao trocar sua dívida. Execute swaps puros de dívida com taxa 0% de execução direto do nosso painel."
             },
@@ -166,6 +179,13 @@
         "title": "Pronto para maximizar o seu yield?",
         "subtitle": "Gerencie suas posições de empréstimo com as taxas mais eficientes do mercado e máxima facilidade.",
         "button": "Fazer Meu Primeiro Swap"
+    },
+    "docs": {
+        "title1": "Documentação",
+        "title2": "Em Breve",
+        "description": "Estamos configurando o nosso hub de documentação para a LilSwap. Fique ligado!",
+        "backToHome": "Voltar à Tela Inicial",
+        "accessApp": "Acessar App"
     },
     "footer": {
         "tagline": "A interface definitiva para usuários hardcore de DeFi.",
