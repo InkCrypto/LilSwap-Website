@@ -54,7 +54,7 @@
             "efficiency": {
                 "title": "Construído para Máxima Eficiência",
                 "desc1": "Uma interface simples, direta ao ponto e focada em otimizar a troca das suas posições de lending sem pagar taxas extras. Nossa arquitetura é extremamente enxuta para você economizar o máximo possível.",
-                "desc2": "Pague apenas o gas da rede, sem taxas adicionais de adaptadores ao repassar sua dívida. Execute swaps puros de dívida com taxa 0% de execução direto do nosso painel."
+                "desc2": "Pague apenas o gas da rede, sem taxas adicionais de adaptadores ao trocar sua dívida. Execute swaps puros de dívida com taxa 0% de execução direto do nosso painel."
             },
             "directAccess": {
                 "title": "Acesso Direto ao Protocolo",
@@ -106,8 +106,8 @@
                 "desc": "Corte os custos ao meio comparado com as rotas padrões dos agregadores. Nunca mais pague a combinação de 0.25% de taxa do protocolo junto aos 0.05% de taxa de serviço."
             },
             "debt": {
-                "title": "Pague $0 para trocar dívidas",
-                "desc": "A maioria dos lugares vai cobrar uma taxa de serviço só pra passar pela UI deles na troca de dívidas. Nós cobramos simplesmente 0% em taxas de execução ao invés dos ~0.05%."
+                "title": "Pague $0 em taxas de protocolo ao trocar sua dívida",
+                "desc": "Adaptadores cobram uma taxa de execução de ~0,05% apenas pelo uso. Nós cobramos 0% de taxa de execução para pagamentos diretos e trocas de dívida."
             }
         },
         "calculator": {
@@ -126,21 +126,21 @@
     "roadmap": {
         "title": "Roadmap de Desenvolvimento",
         "subtitle": "A nossa visão para o futuro do protocolo da LilSwap.",
-        "liveNow": "Ao Vivo",
+        "liveNow": "No Ar",
         "phase1": {
             "title": "Fase 1",
-            "subtitle": "Fundamentos & Swaps de Dívida",
-            "desc": "Fundamentação dos recursos de migração de dívida em conjunto aos deploys nas principais Layer-2 para ter alcance máximo."
+            "subtitle": "Swaps de Dívida & Eficiência",
+            "desc": "Foco total em swaps de dívida com 0% de taxa de execução. Disponível atualmente nos mercados V3 mais populares: Ethereum, BNB, Polygon e Base."
         },
         "phase2": {
             "title": "Fase 2",
-            "subtitle": "Swaps de Colateral",
-            "desc": "Implementação das trocas de swaps de colaterais, com taxas visivelmente baixas comparadas as rotas diretas do mercado."
+            "subtitle": "Swaps de Colateral & Expansão",
+            "desc": "Implementação de trocas de colateral com taxas até 67% menores. Expansão para novas redes e integração de novos ativos para gerenciamento completo."
         },
         "phase3": {
             "title": "Fase 3",
-            "subtitle": "Proteção Anti-MEV",
-            "desc": "Integração com o CoW Protocol para garantir execuções protegidas contra MEV, via proxies em todas as transações."
+            "subtitle": "Proteção Anti-MEV (CoW Protocol)",
+            "desc": "Integração total com o CoW Protocol para trades protegidos contra ataques MEV (front-running). Garanta o melhor preço e execução justa em todas as operações."
         }
     },
     "faq": {
@@ -164,7 +164,7 @@
     },
     "cta": {
         "title": "Pronto para maximizar o seu yield?",
-        "subtitle": "Comece agora o gerenciamento das suas posições de empréstimos com 0% em taxas extras de execução e muita facilidade.",
+        "subtitle": "Gerencie suas posições de empréstimo com as taxas mais eficientes do mercado e máxima facilidade.",
         "button": "Fazer Meu Primeiro Swap"
     },
     "footer": {
@@ -180,6 +180,8 @@
             "api": "API",
             "soon": "Em Breve"
         },
+        "lightOn": "Apagar a luz",
+        "lightOff": "Acender a luz",
         "rights": "Todos os direitos reservados."
     }
 }

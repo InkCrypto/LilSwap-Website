@@ -10,7 +10,7 @@
     },
     "hero": {
         "tagline": "Fee-Optimized Interface",
-        "title1": "Cost-Efficient",
+        "title1": "Cost-Efficiency",
         "title2": "Aave Position Manager",
         "description": "The smart alternative for managing Aave v3 lending positions. Swap debt with 0% execution fees and save up to 67% on collateral swaps compared to the official interface.",
         "accessApp": "Access App",
@@ -54,7 +54,7 @@
             "efficiency": {
                 "title": "Built for Maximum Fee Efficiency",
                 "desc1": "A simple, straight-to-the-point interface focused on optimizing your lending position swaps without extra fees. Our architecture is lean by design so you save as much as possible.",
-                "desc2": "Only pay network gas, no added adapter fees for debt shifting. Execute pure 0% fee debt swaps directly via our dashboard."
+                "desc2": "Only pay network gas, no added adapter fees for debt switching. Execute pure 0% fee debt swaps directly via our dashboard."
             },
             "directAccess": {
                 "title": "Direct Protocol Access",
@@ -106,8 +106,8 @@
                 "desc": "Drastically reduce swap fees compared to standard aggregator routes. Never pay 0.25% protocol + 0.05% execution fees again."
             },
             "debt": {
-                "title": "Pay $0 in protocol fees for debt shifting",
-                "desc": "Adapters charge a ~0.05% execution fee just to use them. We charge purely 0% execution fees for direct debt repayments and shifts."
+                "title": "Pay $0 in protocol fees for debt switching",
+                "desc": "Adapters charge a ~0.05% execution fee just to use them. We charge purely 0% execution fees for direct debt repayments and switches."
             }
         },
         "calculator": {
@@ -129,18 +129,18 @@
         "liveNow": "Live Now",
         "phase1": {
             "title": "Phase 1",
-            "subtitle": "Foundations & Debt Swaps",
-            "desc": "Establishing core debt swap features and deploying across major L2 networks for maximum accessibility."
+            "subtitle": "Debt Swaps & Efficiency",
+            "desc": "Main focus on 0% execution fee debt swaps. Currently available on the most popular V3 markets: Ethereum, BNB, Polygon, and Base."
         },
         "phase2": {
             "title": "Phase 2",
-            "subtitle": "Collateral Swaps",
-            "desc": "Implementation of collateral swapping with highly optimized fees compared to standard protocol routes."
+            "subtitle": "Collateral Swaps & Expansion",
+            "desc": "Implementation of collateral swaps with up to 67% lower fees. Expansion to more chains and integration of new assets for comprehensive management."
         },
         "phase3": {
             "title": "Phase 3",
-            "subtitle": "MEV Protection",
-            "desc": "Integration with CoW Protocol and specialized infrastructure for secure, MEV-protected proxy execution."
+            "subtitle": "MEV Protection (CoW Protocol)",
+            "desc": "Full integration with CoW Protocol for MEV-protected trades. Get the best prices with protection against front-running and sandwich attacks."
         }
     },
     "faq": {
@@ -164,7 +164,7 @@
     },
     "cta": {
         "title": "Ready to optimize your yield?",
-        "subtitle": "Start managing your lending positions with zero execution fees and maximum efficiency.",
+        "subtitle": "Start managing your lending positions with optimized execution fees and maximum efficiency.",
         "button": "Swap Now"
     },
     "footer": {
@@ -180,6 +180,8 @@
             "api": "API",
             "soon": "Soon"
         },
+        "lightOn": "Turn the lights off",
+        "lightOff": "Turn the lights on",
         "rights": "All rights reserved."
     }
 }

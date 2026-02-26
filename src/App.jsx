@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      <Navbar />
       <Hero />
       <LogosSection />
       <DashboardPreview />
@@ -42,7 +42,7 @@ function App() {
       <Roadmap />
       <FAQ />
       <CTA />
-      <Footer />
+      <Footer isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
     </>
   );
 }

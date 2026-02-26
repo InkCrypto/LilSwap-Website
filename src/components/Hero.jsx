@@ -1,10 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { ExternalLink, FileText } from 'lucide-react';
 
 const Hero = () => {
     const { t } = useTranslation();
     return (
-        <header className="relative pt-32 pb-16 lg:pt-48 lg:pb-20 overflow-hidden">
+        <header className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full bg-hero-pattern opacity-50 pointer-events-none"></div>
             <div className="absolute top-20 right-0 w-96 h-96 bg-accent-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
             <div className="absolute bottom-0 left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -28,12 +29,15 @@ const Hero = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="https://app.lilswap.xyz" className="w-full sm:w-auto bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-xl font-bold transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 text-sm sm:text-base flex items-center justify-center gap-2 active:scale-95">
+                    <a
+                        href="https://app.lilswap.xyz"
+                        className="w-full sm:w-auto bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-xl font-bold transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 text-sm sm:text-base flex items-center justify-center gap-2 active:scale-95"
+                    >
                         <span className="inline">{t('hero.accessApp')}</span>
-                        <span className="material-symbols-outlined text-base">arrow_forward</span>
+                        <ExternalLink className="w-4 h-4" />
                     </a>
                     <button disabled className="w-full sm:w-auto bg-slate-100 dark:bg-slate-800/30 border border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-500 px-8 py-3.5 rounded-xl font-bold transition-all text-sm sm:text-base flex items-center justify-center gap-2 cursor-not-allowed">
-                        <span className="material-symbols-outlined text-slate-400 dark:text-slate-500 text-base">description</span>
+                        <FileText className="w-4 h-4 text-slate-400 dark:text-slate-500" />
                         <span className="inline flex items-center gap-2">{t('hero.docs')} <span className="text-[10px] uppercase bg-slate-200 dark:bg-slate-700/50 text-slate-500 dark:text-slate-400 px-1.5 py-0.5 rounded font-bold">{t('hero.soon')}</span></span>
                     </button>
                 </div>

@@ -89,14 +89,6 @@ const Efficiency = () => {
                             </div>
 
                             <div className="grid grid-cols-2 gap-4 mb-8">
-                                <div className="bg-slate-800/30 border border-slate-700/50 rounded-xl p-4 flex flex-col items-center justify-center text-center">
-                                    <div className="text-xs text-slate-400 mb-2 font-medium">{t('efficiency.calculator.officialUI')} {isDebtSwap ? "(~0.05%)" : "(~0.30%)"}</div>
-                                    <div className="text-2xl font-display font-medium text-slate-300">
-                                        ${officialFee.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                                    </div>
-                                    <div className="text-[10px] text-slate-500 mt-1 uppercase tracking-wider">{t('efficiency.calculator.estimatedFee')}</div>
-                                </div>
-
                                 <div className="bg-primary/20 border border-primary/30 rounded-xl p-4 flex flex-col items-center justify-center relative overflow-hidden text-center shadow-[0_0_15px_rgba(168,85,247,0.15)]">
                                     <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent pointer-events-none"></div>
                                     <div className="text-xs text-white mb-2 font-bold flex items-center justify-center gap-1 relative z-10">
@@ -106,6 +98,14 @@ const Efficiency = () => {
                                         ${lilSwapFee.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                                     </div>
                                     <div className="text-[10px] text-primary/80 mt-1 uppercase tracking-wider relative z-10 font-semibold">{t('efficiency.calculator.estimatedFee')}</div>
+                                </div>
+
+                                <div className="bg-slate-800/30 border border-slate-700/50 rounded-xl p-4 flex flex-col items-center justify-center text-center">
+                                    <div className="text-xs text-slate-400 mb-2 font-medium">{t('efficiency.calculator.officialUI')} {isDebtSwap ? "(~0.05%)" : "(~0.30%)"}</div>
+                                    <div className="text-2xl font-display font-medium text-slate-300">
+                                        ${officialFee.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                                    </div>
+                                    <div className="text-[10px] text-slate-500 mt-1 uppercase tracking-wider">{t('efficiency.calculator.estimatedFee')}</div>
                                 </div>
                             </div>
 
