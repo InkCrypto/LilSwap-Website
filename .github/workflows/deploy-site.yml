@@ -40,7 +40,7 @@ jobs:
           # Uploading only the dist folder content
           source: "dist"
           strip_components: 1
-          target: "${{ secrets.REMOTE_SITE_ROOT }}/releases/${{ steps.version.outputs.sha }}"
+          target: "${{ secrets.REMOTE_SITE_ROOT }}/website/releases/${{ steps.version.outputs.sha }}"
 
       - name: Server-side Atomic Swap
         uses: appleboy/ssh-action@master
@@ -52,8 +52,12 @@ jobs:
           script: |
             ROOT="${{ secrets.REMOTE_SITE_ROOT }}"
             SHA="${{ steps.version.outputs.sha }}"
-            REL_DIR="$ROOT/releases/$SHA"
+            REL_DIR="$ROOT/website/releases/$SHA"
             TIMESTAMP=$(date +%Y%m%d%H%M%S)
+
+            # Create Subdomain Symlinks
+            ln -sfn $ROOT/app/current $REL_DIR/app
+            ln -sfn $ROOT/api/current $REL_DIR/api
 
             # Transition Check: Backup physical directory if it exists
             if [ -d "$ROOT/public_html" ] && [ ! -L "$ROOT/public_html" ]; then
@@ -65,4 +69,4 @@ jobs:
             mv -fT $ROOT/public_html_new $ROOT/public_html
 
             # Housekeeping: Keep last 3 releases
-            cd $ROOT/releases && ls -1dt * | tail -n +4 | xargs rm -rf
+            cd $ROOT/website/releases && ls -1dt * | tail -n +4 | xargs rm -rf
