@@ -23,7 +23,18 @@ jobs:
         run: npm install
 
       - name: Build Project
-        run: npm run build
+        run: |
+          # Use .env.example as the base to get default values
+          cp .env.example .env
+
+          # Override/add only if settings exist in GitHub Actions (protects analytics key)
+          if [ -n "${{ secrets.VITE_GA_MEASUREMENT_ID }}" ]; then
+            sed -i "s/^VITE_GA_MEASUREMENT_ID=.*/VITE_GA_MEASUREMENT_ID=${{ secrets.VITE_GA_MEASUREMENT_ID }}/" .env
+          else
+            echo "::warning title=Google Analytics Missing::A chave VITE_GA_MEASUREMENT_ID não foi encontrada nos secrets. O deploy continuará, mas o site ficará sem rastreamento."
+          fi
+
+          npm run build
 
       - name: Set Release Version
         id: version

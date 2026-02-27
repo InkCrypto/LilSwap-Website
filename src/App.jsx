@@ -1,7 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Docs from './pages/Docs';
+import { initAnalytics, reportWebVitals } from './utils/analytics';
+
+// Component to handle route changes for analytics
+function AnalyticsTracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Analytics is initialized with 'send_page_view: true' by default.
+    // However, on a single page application (SPA), we need to manually
+    // trigger a page view whenever the route changes.
+    if (window.gtag) {
+      window.gtag('event', 'page_view', {
+        page_path: location.pathname + location.search,
+      });
+    }
+  }, [location]);
+
+  return null;
+}
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -20,11 +39,18 @@ function App() {
     }
   }, [isDarkMode]);
 
+  // Initialize analytics once when the app mounts
+  useEffect(() => {
+    initAnalytics();
+    reportWebVitals();
+  }, []);
+
   const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
 
   return (
     <Router>
       <div className="min-h-screen bg-white dark:bg-[#0A0516] transition-colors duration-300 flex flex-col">
+        <AnalyticsTracker />
         <main className="flex-grow flex flex-col">
           <Routes>
             <Route path="/" element={<Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />} />
