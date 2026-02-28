@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
@@ -18,65 +17,6 @@ const LilLogo = ({ className = "w-6 h-6" }) => (
         </g>
     </svg>
 );
-
-const SystemStatus = () => {
-    const { t } = useTranslation();
-    const [status, setStatus] = useState('checking');
-    const [apiVersion, setApiVersion] = useState(null);
-
-    useEffect(() => {
-        const checkHealth = async () => {
-            try {
-                const response = await fetch('https://api.lilswap.xyz/v1/health');
-                if (response.ok) {
-                    const data = await response.json();
-                    setStatus('operational');
-                    if (data.version) setApiVersion(data.version);
-                } else {
-                    setStatus('offline');
-                }
-            } catch (error) {
-                setStatus('offline');
-            }
-        };
-
-        checkHealth(); // Check immediately
-        const interval = setInterval(checkHealth, 30000); // And every 30s
-        return () => clearInterval(interval);
-    }, []);
-
-    const versionLabel = apiVersion ? (
-        <span className="text-slate-400 dark:text-slate-500 font-mono">API v{apiVersion}</span>
-    ) : null;
-
-    if (status === 'checking') {
-        return (
-            <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-slate-400 animate-pulse"></span>
-                <span>{t('footer.system.checking')}</span>
-            </div>
-        );
-    }
-
-    if (status === 'offline') {
-        return (
-            <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                <span className="text-red-500 font-medium">{t('footer.system.offline')}</span>
-            </div>
-        );
-    }
-
-    return (
-        <div className="flex items-center gap-3">
-            {versionLabel}
-            <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                <span className="text-green-500 font-medium">{t('footer.system.operational')}</span>
-            </div>
-        </div>
-    );
-};
 
 const Footer = ({ isDarkMode, toggleDarkMode }) => {
     const { t } = useTranslation();
@@ -164,9 +104,6 @@ const Footer = ({ isDarkMode, toggleDarkMode }) => {
 
                 <div className="border-t border-border-light dark:border-border-dark pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 dark:text-slate-500">
                     <p>&copy; {new Date().getFullYear()} InkCrypto Finance. {t('footer.rights')}</p>
-                    <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-                        <SystemStatus />
-                    </div>
                 </div>
             </div>
         </footer>
