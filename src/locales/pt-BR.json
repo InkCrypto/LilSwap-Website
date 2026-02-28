@@ -192,7 +192,7 @@
         "system": {
             "checking": "Checando Sistemas...",
             "offline": "Sistemas Fora do Ar",
-            "operational": "Sistemas Operacionais"
+            "operational": "Operacional"
         },
         "resources": {
             "title": "Recursos",

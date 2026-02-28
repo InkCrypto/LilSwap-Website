@@ -9,7 +9,7 @@ const Features = () => {
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-display font-bold mb-4 dark:text-white">{t('features.title')}</h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-6 h-auto md:h-[600px]">
+                <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-6 h-auto md:h-150">
                     <div className="md:col-span-2 row-span-2 bg-white dark:bg-card-dark rounded-3xl p-8 border border-border-light dark:border-border-dark relative overflow-hidden group hover:border-primary/50 transition-colors duration-300 shadow-lg">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-primary/20 transition-all duration-500"></div>
                         <div className="relative z-10 h-full flex flex-col justify-between">
@@ -42,12 +42,14 @@ const Features = () => {
                                         <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors">
                                             <img src="/icons/networks/binance.svg" alt="BNB Chain" className="w-full h-full object-contain" />
                                         </div>
+                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors">
+                                            <img src="/icons/networks/arbitrum.svg" alt="Arbitrum" className="w-full h-full object-contain" />
+                                        </div>
                                     </div>
-                                    <div className="hidden sm:flex items-center gap-3">
+                                    <div className="flex items-center gap-2 sm:gap-3">
                                         <div className="flex -space-x-4">
                                             <div className="w-8 h-8 rounded-full border-2 border-white dark:border-card-dark bg-white dark:bg-slate-800 p-1.5 z-10 shadow-sm relative"><img src="/icons/networks/gnosis.svg" alt="Gnosis" className="w-full h-full object-contain" /></div>
                                             <div className="w-8 h-8 rounded-full border-2 border-white dark:border-card-dark bg-white dark:bg-slate-800 p-1.5 z-20 shadow-sm relative"><img src="/icons/networks/avalanche.svg" alt="Avalanche" className="w-full h-full object-contain" /></div>
-                                            <div className="w-8 h-8 rounded-full border-2 border-white dark:border-card-dark bg-white dark:bg-slate-800 p-1.5 z-30 shadow-sm relative"><img src="/icons/networks/arbitrum.svg" alt="Arbitrum" className="w-full h-full object-contain" /></div>
                                             <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white border-2 border-white dark:border-card-dark shadow-md z-40 transform translate-x-1 relative">
                                                 <span className="material-symbols-outlined text-[14px] font-bold">add</span>
                                             </div>
