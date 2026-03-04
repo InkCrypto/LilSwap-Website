@@ -12,7 +12,7 @@
         "tagline": "Fee-Optimized Interface",
         "title1": "Smarter Aave",
         "title2": "Position Manager",
-        "description": "The smart alternative for managing Aave v3 lending positions. Swap debt with 0% execution fees and save up to 67% on collateral swaps compared to the official interface.",
+        "description": "The smart alternative for managing Aave v3 lending positions. Save up to 67% on collateral swaps and swap debt with 0% execution fees compared to the official interface.",
         "accessApp": "Access App",
         "docs": "Docs",
         "soon": "Soon",
@@ -65,9 +65,8 @@
         "title": "DeFi Made Cost-Efficient",
         "items": {
             "efficiency": {
-                "title": "Maximize Your Yield",
-                "desc1": "A simple, straight-to-the-point interface focused on optimizing your lending position swaps without extra fees. Our architecture is lean by design so you save as much as possible.",
-                "desc2": "Only pay network gas, no added adapter fees for debt switching. Execute pure 0% fee debt swaps directly via our dashboard."
+                "title": "Zero-Fee Debt Swaps",
+                "desc1": "Execute debt swaps with 0% execution fees on the most popular V3 markets. Pay only network gas and eliminate middleware costs."
             },
             "directAccess": {
                 "title": "Direct Protocol Access",
@@ -75,7 +74,7 @@
             },
             "lowCost": {
                 "title": "Low-Cost Collateral Swaps",
-                "desc": "Feature under development that will offer fees up to 67% cheaper compared to conventional adapters throughout your collateral management."
+                "desc": "A simple, straight-to-the-point interface focused on drastically reducing your collateral swap costs. Our architecture is lean by design so you save as much as possible.\n\nSave up to 67% in fees compared to traditional adapters. Execute low-cost collateral swaps directly via our dashboard with peak efficiency."
             }
         }
     },
@@ -143,12 +142,12 @@
         "phase1": {
             "title": "Phase 1",
             "subtitle": "Debt Swaps & Efficiency",
-            "desc": "Main focus on 0% execution fee debt swaps. Currently available on the most popular V3 markets: Ethereum, Base, BNB, Polygon, and Arbitrum."
+            "desc": "Core infrastructure launch focused on 0% execution fee debt swaps. Initial rollout completed successfully."
         },
         "phase2": {
             "title": "Phase 2",
             "subtitle": "Collateral Swaps & Expansion",
-            "desc": "Implementation of collateral swaps with up to 67% lower fees. Expansion to more chains and integration of new assets for comprehensive management."
+            "desc": "Now available. Collateral swaps with up to 67% lower fees, integrating the most efficient routers available."
         },
         "phase3": {
             "title": "Phase 3",
@@ -189,11 +188,6 @@
     },
     "footer": {
         "tagline": "The ultimate interface for DeFi power users.",
-        "system": {
-            "checking": "Checking System...",
-            "offline": "System Offline",
-            "operational": "Operational"
-        },
         "resources": {
             "title": "Resources",
             "docs": "Documentation",

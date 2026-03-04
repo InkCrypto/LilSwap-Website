@@ -15,14 +15,11 @@ const Features = () => {
                         <div className="relative z-10 h-full flex flex-col justify-between">
                             <div>
                                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                                    <span className="material-symbols-outlined text-primary text-2xl">bolt</span>
+                                    <span className="material-symbols-outlined text-primary text-2xl">rocket_launch</span>
                                 </div>
-                                <h3 className="text-2xl font-bold mb-3 dark:text-white">{t('features.items.efficiency.title')}</h3>
-                                <p className="text-slate-600 dark:text-slate-400 max-w-md mb-4">
-                                    {t('features.items.efficiency.desc1')}
-                                </p>
-                                <p className="text-slate-600 dark:text-slate-400 max-w-md">
-                                    {t('features.items.efficiency.desc2')}
+                                <h3 className="text-2xl font-bold mb-3 dark:text-white">{t('features.items.lowCost.title')}</h3>
+                                <p className="text-slate-600 dark:text-slate-400 max-w-md mb-4 whitespace-pre-line">
+                                    {t('features.items.lowCost.desc')}
                                 </p>
                             </div>
 
@@ -30,19 +27,19 @@ const Features = () => {
                                 <h4 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">{t('logosSection.title')}</h4>
                                 <div className="flex flex-wrap items-center gap-4 sm:gap-6">
                                     <div className="flex gap-2 sm:gap-3">
-                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors">
+                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-accent-cyan/50 transition-colors">
                                             <img src="/icons/networks/ethereum.svg" alt="Ethereum" className="w-full h-full object-contain" />
                                         </div>
-                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors">
+                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-accent-cyan/50 transition-colors">
                                             <img src="/icons/networks/base.svg" alt="Base" className="w-full h-full object-contain" />
                                         </div>
-                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors">
+                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-accent-cyan/50 transition-colors">
                                             <img src="/icons/networks/binance.svg" alt="BNB Chain" className="w-full h-full object-contain" />
                                         </div>
-                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors">
+                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-accent-cyan/50 transition-colors">
                                             <img src="/icons/networks/polygon.svg" alt="Polygon" className="w-full h-full object-contain" />
                                         </div>
-                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-colors">
+                                        <div className="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1.5 shadow-sm border border-slate-100 dark:border-slate-700 hover:border-accent-cyan/50 transition-colors">
                                             <img src="/icons/networks/arbitrum.svg" alt="Arbitrum" className="w-full h-full object-contain" />
                                         </div>
                                     </div>
@@ -61,28 +58,25 @@ const Features = () => {
                         </div>
                     </div>
 
-                    <div className="bg-white dark:bg-card-dark rounded-3xl p-8 border border-border-light dark:border-border-dark group hover:border-accent-orange/50 transition-colors duration-300 shadow-lg relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-accent-orange/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:bg-accent-orange/20 transition-all duration-500"></div>
-                        <div className="w-12 h-12 bg-accent-orange/10 rounded-xl flex items-center justify-center mb-4">
-                            <span className="material-symbols-outlined text-accent-orange text-2xl">dns</span>
-                        </div>
-                        <h3 className="text-xl font-bold mb-2 dark:text-white">{t('features.items.directAccess.title')}</h3>
-                        <p className="text-sm text-slate-600 dark:text-slate-400">
-                            {t('features.items.directAccess.desc')}
-                        </p>
-                    </div>
-
                     <div className="bg-white dark:bg-card-dark rounded-3xl p-8 border border-border-light dark:border-border-dark group hover:border-accent-cyan/50 transition-colors duration-300 shadow-lg relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-32 h-32 bg-accent-cyan/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:bg-accent-cyan/20 transition-all duration-500"></div>
                         <div className="w-12 h-12 bg-accent-cyan/10 rounded-xl flex items-center justify-center mb-4">
                             <span className="material-symbols-outlined text-accent-cyan text-2xl">percent</span>
                         </div>
-                        <h3 className="text-xl font-bold mb-2 dark:text-white">
-                            {t('features.items.lowCost.title')}
-                            <span className="ml-2 inline-block whitespace-nowrap text-[10px] uppercase bg-accent-cyan/20 text-accent-cyan px-1.5 py-0.5 rounded font-bold align-middle">{t('hero.soon')}</span>
-                        </h3>
+                        <h3 className="text-xl font-bold mb-2 dark:text-white">{t('features.items.efficiency.title')}</h3>
                         <p className="text-sm text-slate-600 dark:text-slate-400">
-                            {t('features.items.lowCost.desc')}
+                            {t('features.items.efficiency.desc1')}
+                        </p>
+                    </div>
+
+                    <div className="bg-white dark:bg-card-dark rounded-3xl p-8 border border-border-light dark:border-border-dark group hover:border-emerald-500/50 transition-colors duration-300 shadow-lg relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:bg-emerald-500/20 transition-all duration-500"></div>
+                        <div className="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-4">
+                            <span className="material-symbols-outlined text-emerald-500 text-2xl">bolt</span>
+                        </div>
+                        <h3 className="text-xl font-bold mb-2 dark:text-white">{t('features.items.directAccess.title')}</h3>
+                        <p className="text-sm text-slate-600 dark:text-slate-400">
+                            {t('features.items.directAccess.desc')}
                         </p>
                     </div>
                 </div>

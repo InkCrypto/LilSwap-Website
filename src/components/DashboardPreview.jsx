@@ -78,11 +78,14 @@ const DashboardPreview = () => {
                                                     <img src="/icons/tokens/usdc.svg" alt="USDC" className="w-full h-full object-contain" />
                                                 </div>
                                                 <div>
-                                                    <div className="font-mono font-bold text-green-500">$60.096,04</div>
+                                                    <div className="font-mono font-bold text-slate-900 dark:text-white">$60.096,04</div>
                                                     <div className="text-xs text-slate-500 font-mono">60103.257 USDC</div>
                                                 </div>
                                             </div>
-                                            <span className="text-[10px] font-bold text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">{t('dashboard.soon')}</span>
+                                            <button className="bg-primary hover:bg-primary-hover text-white px-5 py-2 rounded-xl text-sm font-bold flex items-center gap-1 shadow-lg shadow-primary/20 transition-all active:scale-95">
+                                                <span className="material-symbols-outlined text-sm font-bold">swap_horiz</span>
+                                                {t('dashboard.swap')}
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

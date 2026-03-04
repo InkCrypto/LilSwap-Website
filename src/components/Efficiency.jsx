@@ -68,7 +68,6 @@ const Efficiency = () => {
                                     </h3>
                                     <p className="text-sm text-slate-400">
                                         {t('efficiency.calculator.example')} <span className="text-white font-semibold">USDC &rarr; ETH</span>
-                                        {!isDebtSwap && <span className="ml-2 py-0.5 px-2 bg-slate-800 text-xs rounded text-slate-300 border border-slate-700">{t('efficiency.calculator.soon')}</span>}
                                     </p>
                                 </div>
 

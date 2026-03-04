@@ -12,7 +12,7 @@
         "tagline": "Interface com Taxas Otimizadas",
         "title1": "Gerenciamento Inteligente",
         "title2": "das Posições Aave",
-        "description": "A alternativa inteligente para gerenciar suas posições de empréstimo na Aave V3. Faça swaps de dívida com 0% de taxa de execução e economize até 67% nos swaps de colateral em comparação com a interface oficial.",
+        "description": "A alternativa inteligente para gerenciar suas posições de empréstimo na Aave V3. Economize até 67% nos swaps de colateral e faça swaps de dívida com 0% de taxa de execução em comparação com a interface oficial.",
         "accessApp": "Acessar App",
         "docs": "Docs",
         "soon": "Em Breve",
@@ -65,9 +65,8 @@
         "title": "DeFi Altamente Rentável",
         "items": {
             "efficiency": {
-                "title": "Maximize Seus Ganhos",
-                "desc1": "Uma interface simples, direta ao ponto e focada em otimizar a troca das suas posições de lending sem pagar taxas extras. Nossa arquitetura é extremamente enxuta para você economizar o máximo possível.",
-                "desc2": "Pague apenas o gas da rede, sem taxas adicionais de adaptadores ao trocar sua dívida. Execute swaps puros de dívida com taxa 0% de execução direto do nosso painel."
+                "title": "Swaps de Dívida com Taxa Zero",
+                "desc1": "Troque sua dívida com 0% de taxa de execução nos mercados V3 mais populares. Pague apenas o gas da rede e elimine custos de intermediários."
             },
             "directAccess": {
                 "title": "Acesso Direto ao Protocolo",
@@ -75,7 +74,7 @@
             },
             "lowCost": {
                 "title": "Swaps de Colateral de Baixo Custo",
-                "desc": "Recurso em desenvolvimento que vai oferecer taxas até 67% mais baratas em relação a adaptadores convencionais em todo o seu gerenciamento de colaterais."
+                "desc": "Uma interface simples, direta ao ponto e focada em reduzir drasticamente os custos de troca do seu colateral. Nossa arquitetura é extremamente enxuta para você economizar o máximo possível.\n\nEconomize até 67% em taxas comparado aos adaptadores tradicionais. Execute swaps de colateral de baixo custo direto do nosso painel com a máxima eficiência."
             }
         }
     },
@@ -143,12 +142,12 @@
         "phase1": {
             "title": "Fase 1",
             "subtitle": "Swaps de Dívida & Eficiência",
-            "desc": "Foco total em swaps de dívida com 0% de taxa de execução. Disponível atualmente nos mercados V3 mais populares: Ethereum, Base, BNB, Polygon e Arbitrum."
+            "desc": "Infraestrutura base focada em swaps de dívida com 0% de taxa de execução. Lançamento inicial concluído com sucesso."
         },
         "phase2": {
             "title": "Fase 2",
             "subtitle": "Swaps de Colateral & Expansão",
-            "desc": "Implementação de trocas de colateral com taxas até 67% menores. Expansão para novas redes e integração de novos ativos para gerenciamento completo."
+            "desc": "Disponível agora. Trocas de colateral com taxas até 67% menores integrando os roteadores mais eficientes do mercado."
         },
         "phase3": {
             "title": "Fase 3",
@@ -189,11 +188,6 @@
     },
     "footer": {
         "tagline": "A interface definitiva para usuários hardcore de DeFi.",
-        "system": {
-            "checking": "Checando Sistemas...",
-            "offline": "Sistemas Fora do Ar",
-            "operational": "Operacional"
-        },
         "resources": {
             "title": "Recursos",
             "docs": "Documentação",

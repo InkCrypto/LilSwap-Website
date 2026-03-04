@@ -20,6 +20,19 @@ const Comparison = () => {
             }
         },
         {
+            title: t('comparison.features.collatFees.title'),
+            lilswap: {
+                text: t('comparison.features.collatFees.lilswap'),
+                icon: <CheckCircle2 className="w-5 h-5 text-emerald-500" />,
+                isPositive: true
+            },
+            official: {
+                text: t('comparison.features.collatFees.official'),
+                icon: <Banknote className="w-5 h-5 text-rose-500" />,
+                isPositive: false
+            }
+        },
+        {
             title: t('comparison.features.debtFees.title'),
             lilswap: {
                 text: t('comparison.features.debtFees.lilswap'),
@@ -28,20 +41,6 @@ const Comparison = () => {
             },
             official: {
                 text: t('comparison.features.debtFees.official'),
-                icon: <Banknote className="w-5 h-5 text-rose-500" />,
-                isPositive: false
-            }
-        },
-        {
-            title: t('comparison.features.collatFees.title'),
-            soon: true,
-            lilswap: {
-                text: t('comparison.features.collatFees.lilswap'),
-                icon: <CheckCircle2 className="w-5 h-5 text-emerald-500" />,
-                isPositive: true
-            },
-            official: {
-                text: t('comparison.features.collatFees.official'),
                 icon: <Banknote className="w-5 h-5 text-rose-500" />,
                 isPositive: false
             }
