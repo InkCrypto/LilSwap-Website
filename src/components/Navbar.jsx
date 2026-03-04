@@ -20,7 +20,7 @@ const LilLogo = ({ className = "w-6 h-6" }) => (
 );
 
 const FlagUS = () => (
-    <svg className="w-4 h-3 rounded-sm shadow-sm flex-shrink-0" viewBox="0 0 741 390">
+    <svg className="w-4 h-3 rounded-sm shadow-sm shrink-0" viewBox="0 0 741 390">
         <path fill="#bd3d44" d="M0 0h741v390H0z" />
         <path d="M0 30h741v30H0m0 60h741v30H0m0 60h741v30H0m0 60h741v30H0m0 60h741v30H0m0 60h741v30H0" fill="#fff" />
         <path fill="#192f5d" d="M0 0h296.4v210H0z" />
@@ -29,7 +29,7 @@ const FlagUS = () => (
 );
 
 const FlagBR = () => (
-    <svg className="w-4 h-3 rounded-sm shadow-sm flex-shrink-0" viewBox="0 0 720 504">
+    <svg className="w-4 h-3 rounded-sm shadow-sm shrink-0" viewBox="0 0 720 504">
         <path fill="#009c3b" d="M0 0h720v504H0z" />
         <path fill="#ffdf00" d="M360 41l319 211-319 211L41 252z" />
         <circle fill="#002776" cx="360" cy="252" r="122" />
@@ -80,9 +80,9 @@ const Navbar = () => {
                         </div>
                         <div className="min-w-0 flex flex-col justify-start text-left">
                             <div className="flex items-center gap-2 leading-none">
-                                <h1 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 dark:text-white tracking-tight">
+                                <span className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 dark:text-white tracking-tight">
                                     LilSwap
-                                </h1>
+                                </span>
                                 <span className="hidden sm:inline px-1 py-0 rounded text-primary text-[8px] font-bold border-2 border-primary/30 mt-0.5">BETA</span>
                             </div>
                             <div className="hidden sm:flex items-center gap-2 mt-1 leading-none">
