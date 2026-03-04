@@ -9,20 +9,21 @@
         "swapNow": "Access App"
     },
     "hero": {
-        "tagline": "Fee-Optimized Interface",
-        "title1": "Smarter Aave",
-        "title2": "Position Manager",
-        "description": "The smart alternative for managing Aave v3 lending positions. Save up to 67% on collateral swaps and swap debt with 0% execution fees compared to the official interface.",
+        "tagline": "Non-Custodial · Direct Aave Execution",
+        "title1": "Collateral & Debt Swaps",
+        "title2": "Directly on Aave V3",
+        "description": "The smart alternative for managing Aave v3 positions without extra interface fees. Save up to 67% on collateral swaps and eliminate middleman costs.",
         "accessApp": "Access App",
         "docs": "Docs",
         "soon": "Soon",
+        "trustMessage": "LilSwap does not custody funds and introduces no additional smart contract risk. All transactions interact directly with the official Aave protocol contracts.",
         "stats": {
             "maxSavings": "Max Savings",
             "executionFee": "Execution Fee",
-            "direct": "Non-Custodial",
-            "smartContractCall": "Direct Protocol Access",
+            "direct": "100% On-Chain",
+            "smartContractCall": "Direct Aave Access",
             "instant": "Instant",
-            "settlement": "Atomic Execution"
+            "settlement": "Atomic Settlement"
         }
     },
     "howItWorks": {
@@ -74,7 +75,8 @@
             },
             "lowCost": {
                 "title": "Low-Cost Collateral Swaps",
-                "desc": "A simple, straight-to-the-point interface focused on drastically reducing your collateral swap costs. Our architecture is lean by design so you save as much as possible.\n\nSave up to 67% in fees compared to traditional adapters. Execute low-cost collateral swaps directly via our dashboard with peak efficiency."
+                "desc": "A simple, straight-to-the-point interface focused on drastically reducing your collateral swap costs. Our architecture is lean by design so you save as much as possible.\n\nSave up to 67% in fees compared to traditional adapters. Execute low-cost collateral swaps directly via our dashboard with peak efficiency.",
+                "trustMessage": "Direct interaction: Guaranteed security with no new protocol risks."
             }
         }
     },
@@ -136,9 +138,10 @@
         }
     },
     "roadmap": {
-        "title": "Product Roadmap",
-        "subtitle": "Our vision for the future of LilSwap protocol development.",
+        "title": "Our Journey",
+        "subtitle": "Track our evolution as we simplify and lower the cost of managing your positions.",
         "liveNow": "Live Now",
+        "cta": "Access now and see what's new",
         "phase1": {
             "title": "Phase 1",
             "subtitle": "Debt Swaps & Efficiency",
@@ -159,11 +162,11 @@
         "title": "Frequently Asked Questions",
         "q1": {
             "title": "Is LilSwap a separate lending protocol?",
-            "desc": "No, LilSwap is simply an alternative, cost-efficient interface. You are interacting directly with Aave V3 smart contracts, just doing so through a highly optimized execution layer."
+            "desc": "No. LilSwap is not a lending protocol and does not custody funds. Transactions interact directly with the official Aave contracts and your position remains in Aave at all times."
         },
         "q2": {
             "title": "Why are your fees lower than the official interface?",
-            "desc": "In DeFi, execution fees (like the standard ~0.05% for debt swaps) are often treated as the 'norm' and can even be omitted by interfaces that claim to be fee-free. At LilSwap, we challenge this standard. Our fees are lower—and 0% for debt swaps—simply because we choose not to charge service fees where others hide them. We believe the value should stay with the user, providing total transparency on your real costs."
+            "desc": "In DeFi, hidden service fees (like the standard ~0.05% for debt swaps and adapter fees for collateral) are often treated as the 'norm'. At LilSwap, we challenge this standard. Our architecture is designed to interact directly with the Aave protocol, eliminating intermediary service fees for debt swaps (0% fee) and reducing collateral swap costs by up to 67%. We believe the savings should stay with the user, providing total transparency on your real costs."
         },
         "q3": {
             "title": "Do I need to migrate my positions to LilSwap?",

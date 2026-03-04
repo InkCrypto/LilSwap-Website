@@ -140,6 +140,16 @@ const Comparison = () => {
                         </table>
                     </div>
                 </div>
+
+                <div className="mt-12 flex justify-center">
+                    <a
+                        href="https://app.lilswap.xyz"
+                        className="bg-primary hover:bg-primary-hover text-white px-10 py-4 rounded-2xl font-bold transition-all shadow-xl shadow-primary/20 hover:shadow-primary/40 flex items-center gap-3 active:scale-95 group"
+                    >
+                        <span>{t('navbar.swapNow')}</span>
+                        <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </a>
+                </div>
             </div>
         </section>
     );

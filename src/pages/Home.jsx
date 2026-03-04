@@ -15,8 +15,8 @@ function Home({ isDarkMode, toggleDarkMode }) {
     return (
         <>
             <Navbar />
-            <main className="flex-grow">
-                <Hero />
+            <main className="grow">
+                    <Hero />
                 <div className="bg-slate-50/80 dark:bg-slate-900/40 border-y border-slate-100 dark:border-slate-800/50">
                     <Features />
                 </div>

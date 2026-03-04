@@ -22,7 +22,7 @@ const Hero = () => {
 
                 <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 tracking-tight leading-tight">
                     {t('hero.title1')} <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-cyan text-glow">{t('hero.title2')}</span>
+                    <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-accent-cyan text-glow">{t('hero.title2')}</span>
                 </h1>
 
                 <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -39,7 +39,7 @@ const Hero = () => {
                     </a>
                     <Link to="/docs" className="w-full sm:w-auto bg-slate-100 dark:bg-slate-800/30 border border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-500 hover:text-primary dark:hover:text-primary px-8 py-3.5 rounded-xl font-bold transition-all text-sm sm:text-base flex items-center justify-center gap-2 group">
                         <FileText className="w-4 h-4 text-slate-400 dark:text-slate-500 transition-colors group-hover:text-primary" />
-                        <span className="inline flex items-center gap-2">{t('hero.docs')} <span className="text-[10px] uppercase bg-slate-200 dark:bg-slate-700/50 text-slate-500 dark:text-slate-400 px-1.5 py-0.5 rounded font-bold transition-colors group-hover:text-primary group-hover:bg-primary/10">{t('hero.soon')}</span></span>
+                        <span className="flex items-center gap-2">{t('hero.docs')} <span className="text-[10px] uppercase bg-slate-200 dark:bg-slate-700/50 text-slate-500 dark:text-slate-400 px-1.5 py-0.5 rounded font-bold transition-colors group-hover:text-primary group-hover:bg-primary/10">{t('hero.soon')}</span></span>
                     </Link>
                 </div>
 
@@ -61,6 +61,10 @@ const Hero = () => {
                         <div className="text-[10px] sm:text-sm font-semibold text-slate-500 dark:text-slate-400 mt-1 uppercase tracking-wider">{t('hero.stats.settlement')}</div>
                     </div>
                 </div>
+
+                <p className="mt-8 text-xs sm:text-sm text-slate-500 dark:text-slate-500 max-w-2xl mx-auto font-medium leading-relaxed opacity-80">
+                    {t('hero.trustMessage')}
+                </p>
 
 
             </div>

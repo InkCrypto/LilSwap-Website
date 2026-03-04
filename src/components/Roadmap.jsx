@@ -12,7 +12,7 @@ const Roadmap = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-                    <div className="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-primary/20 via-primary/50 to-primary/20 -translate-y-1/2 z-0 rounded-full"></div>
+                    <div className="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-linear-to-r from-primary/20 via-primary/50 to-primary/20 -translate-y-1/2 z-0 rounded-full"></div>
 
                     <div className="relative z-10 bg-white dark:bg-card-dark rounded-2xl p-8 border border-border-light dark:border-border-dark shadow-lg flex flex-col h-full opacity-100 hover:ring-2 hover:ring-primary/20 hover:shadow-xl transition-opacity duration-300">
                         <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg mb-6 shadow-lg shadow-primary/40 mx-auto md:mx-0">1</div>
@@ -43,6 +43,16 @@ const Roadmap = () => {
                             {t('roadmap.phase3.desc')}
                         </p>
                     </div>
+                </div>
+
+                <div className="mt-16 flex justify-center">
+                    <a
+                        href="https://app.lilswap.xyz"
+                        className="bg-primary hover:bg-primary-hover text-white px-10 py-4 rounded-2xl font-bold transition-all shadow-xl shadow-primary/20 hover:shadow-primary/40 flex items-center gap-3 active:scale-95 group"
+                    >
+                        <span>{t('roadmap.cta')}</span>
+                        <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </a>
                 </div>
             </div>
         </section>

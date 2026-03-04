@@ -21,6 +21,10 @@ const Features = () => {
                                 <p className="text-slate-600 dark:text-slate-400 max-w-md mb-4 whitespace-pre-line">
                                     {t('features.items.lowCost.desc')}
                                 </p>
+                                <div className="flex items-center gap-2 text-[11px] font-bold text-emerald-600 dark:text-emerald-400/80 uppercase tracking-wider">
+                                    <span className="material-symbols-outlined text-sm">shield</span>
+                                    {t('features.items.lowCost.trustMessage')}
+                                </div>
                             </div>
 
                             <div className="mt-8 border-t border-slate-100 dark:border-slate-800 pt-6">

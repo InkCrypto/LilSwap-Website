@@ -9,18 +9,19 @@
         "swapNow": "Acesse o App"
     },
     "hero": {
-        "tagline": "Interface com Taxas Otimizadas",
-        "title1": "Gerenciamento Inteligente",
-        "title2": "das Posições Aave",
-        "description": "A alternativa inteligente para gerenciar suas posições de empréstimo na Aave V3. Economize até 67% nos swaps de colateral e faça swaps de dívida com 0% de taxa de execução em comparação com a interface oficial.",
+        "tagline": "Sem Custódia · Execução Direta na Aave",
+        "title1": "Swaps de Colateral e Dívida",
+        "title2": "Direto na Aave V3",
+        "description": "A alternativa inteligente para gerenciar suas posições de lending sem taxas extras de interface. Economize até 67% nos swaps de colateral e elimine custos intermediários.",
         "accessApp": "Acessar App",
         "docs": "Docs",
         "soon": "Em Breve",
+        "trustMessage": "A LilSwap não custodia seus fundos e não introduz novos riscos de smart contract. Todas as operações utilizam exclusivamente os contratos oficiais do protocolo Aave.",
         "stats": {
             "maxSavings": "Economia Máx.",
             "executionFee": "Taxa de Execução",
-            "direct": "Sem Custódia",
-            "smartContractCall": "Acesso Direto ao Protocolo",
+            "direct": "100% On-Chain",
+            "smartContractCall": "Acesso Direto à Aave",
             "instant": "Instantâneo",
             "settlement": "Execução Atômica"
         }
@@ -74,7 +75,8 @@
             },
             "lowCost": {
                 "title": "Swaps de Colateral de Baixo Custo",
-                "desc": "Uma interface simples, direta ao ponto e focada em reduzir drasticamente os custos de troca do seu colateral. Nossa arquitetura é extremamente enxuta para você economizar o máximo possível.\n\nEconomize até 67% em taxas comparado aos adaptadores tradicionais. Execute swaps de colateral de baixo custo direto do nosso painel com a máxima eficiência."
+                "desc": "Uma interface simples, direta ao ponto e focada em reduzir drasticamente os custos de troca do seu colateral. Nossa arquitetura é extremamente enxuta para você economizar o máximo possível.\n\nEconomize até 67% em taxas comparado aos adaptadores tradicionais. Execute swaps de colateral de baixo custo direto do nosso painel com a máxima eficiência.",
+                "trustMessage": "Interação direta: Segurança garantida sem novos riscos de protocolo."
             }
         }
     },
@@ -136,9 +138,10 @@
         }
     },
     "roadmap": {
-        "title": "Roadmap de Desenvolvimento",
-        "subtitle": "A nossa visão para o futuro do protocolo da LilSwap.",
+        "title": "Nossa Jornada",
+        "subtitle": "Acompanhe nossa evolução enquanto simplificamos e barateamos a gestão das suas posições.",
         "liveNow": "No Ar",
+        "cta": "Acessar agora e ver novidades",
         "phase1": {
             "title": "Fase 1",
             "subtitle": "Swaps de Dívida & Eficiência",
@@ -158,12 +161,12 @@
     "faq": {
         "title": "Perguntas Frequentes",
         "q1": {
-            "title": "A LilSwap é um protocolo DeFi?",
-            "desc": "Não, somos uma interface alternativa altamente otimizada em termos de custos. Você interage sem intermediários com os contratos V3 oficiais da Aave, só que usando nossa estrutura construída em volta de eficiência de custos."
+            "title": "A LilSwap é um protocolo de lending à parte?",
+            "desc": "Não. A LilSwap não é um protocolo de empréstimo e não custodia fundos. As transações interagem diretamente com os contratos oficiais da Aave e sua posição permanece na Aave em todos os momentos."
         },
         "q2": {
             "title": "Por que as suas taxas são mais baixas que a interface oficial?",
-            "desc": "No DeFi, taxas de execução (como os ~0,05% em swaps de dívida) costumam ser tratadas como algo 'normal' e acabam sendo omitidas por interfaces que se dizem gratuitas. Na LilSwap, desafiamos esse padrão. Nossas taxas são menores — e inexistentes para dívidas — simplesmente porque optamos por não cobrar taxas de serviço onde outras interfaces as escondem. Acreditamos que o lucro deve ficar com você, garantindo transparência total sobre o custo real da sua operação."
+            "desc": "No DeFi, taxas de serviço ocultas (como os ~0.05% em swaps de dívida e taxas de adaptadores em colateral) costumam ser tratadas como o 'normal'. Na LilSwap, desafiamos esse padrão. Nossa arquitetura foi desenhada para interagir diretamente com o protocolo Aave, eliminando taxas de serviço intermediárias em swaps de dívida (taxa 0%) e reduzindo em até 67% os custos de swaps de colateral. Acreditamos que a economia deve ficar com o usuário, garantindo transparência total sobre o custo real da sua operação."
         },
         "q3": {
             "title": "Preciso migrar minhas posições para a LilSwap?",
