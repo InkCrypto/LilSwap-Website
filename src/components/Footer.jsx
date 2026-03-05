@@ -1,5 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Coffee } from 'lucide-react';
+import { DonateModal } from './DonateModal.jsx';
 
 const LilLogo = ({ className = "w-6 h-6" }) => (
     <svg
@@ -20,10 +23,11 @@ const LilLogo = ({ className = "w-6 h-6" }) => (
 
 const Footer = ({ isDarkMode, toggleDarkMode }) => {
     const { t } = useTranslation();
+    const [isDonateOpen, setIsDonateOpen] = useState(false);
     return (
-        <footer className="bg-white dark:bg-background-dark border-t border-border-light dark:border-border-dark pt-16 pb-8">
+        <footer className="bg-white dark:bg-background-dark border-t border-border-light dark:border-border-dark pt-12 pb-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-6">
 
                     <div className="col-span-2 md:col-span-1">
                         <div className="flex items-center gap-2 mb-4">
@@ -65,6 +69,17 @@ const Footer = ({ isDarkMode, toggleDarkMode }) => {
                                 </span>
                             </button>
                         </div>
+
+                        {/* Donate Button - New Position */}
+                        <div className="mt-4">
+                            <button
+                                onClick={() => setIsDonateOpen(true)}
+                                className="flex items-center gap-1.5 text-slate-400 hover:text-primary transition-colors text-sm font-medium group"
+                            >
+                                <Coffee className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+                                {t('footer.donate')}
+                            </button>
+                        </div>
                     </div>
 
                     {/* <div className="hidden">
@@ -102,9 +117,10 @@ const Footer = ({ isDarkMode, toggleDarkMode }) => {
 
                 </div>
 
-                <div className="border-t border-border-light dark:border-border-dark pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 dark:text-slate-500">
+                <div className="border-t border-border-light dark:border-border-dark pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 dark:text-slate-500">
                     <p>&copy; {new Date().getFullYear()} InkCrypto Finance. {t('footer.rights')}</p>
                 </div>
+                <DonateModal isOpen={isDonateOpen} onClose={() => setIsDonateOpen(false)} />
             </div>
         </footer>
     );

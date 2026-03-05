@@ -199,6 +199,15 @@
         },
         "lightOn": "Turn the lights off",
         "lightOff": "Turn the lights on",
+        "donate": "Donate",
         "rights": "All rights reserved."
+    },
+    "donateModal": {
+        "title": "Buy us a coffee",
+        "sendInstruction": "Send BTC, ETH or Stablecoins",
+        "networkRestriction": "ERC-20 tokens only (no native BTC)",
+        "copyTitle": "Copy address",
+        "copied": "Copied!",
+        "copiedMessage": "Address copied to clipboard."
     }
 }

@@ -199,6 +199,15 @@
         },
         "lightOn": "Apagar a luz",
         "lightOff": "Acender a luz",
+        "donate": "Donate",
         "rights": "Todos os direitos reservados."
+    },
+    "donateModal": {
+        "title": "Pague um café pra gente",
+        "sendInstruction": "Envie BTC, ETH ou Stablecoins",
+        "networkRestriction": "Apenas tokens ERC-20 (sem BTC nativo)",
+        "copyTitle": "Copiar endereço",
+        "copied": "Copiado!",
+        "copiedMessage": "Endereço copiado para o clipboard."
     }
 }
