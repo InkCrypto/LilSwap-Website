@@ -1,6 +1,10 @@
-# LilSwap - Cost-Efficient Aave V3 Position Manager
+# LilSwap Website
 
-LilSwap is a high-performance, non-custodial interface built for managing decentralized lending positions on Aave v3. It acts as a lean execution layer designed to bypass heavy protocol adapter fees and optimize transaction routing.
+This is the promotional website for [LilSwap](https://lilswap.xyz), a high-performance, non-custodial interface built for managing decentralized lending positions on Aave v3. It acts as a lean execution layer designed to bypass heavy protocol adapter fees and optimize transaction routing.
+
+**App URL:** [app.lilswap.xyz](https://app.lilswap.xyz)
+**App Repository:** [github.com/InkCrypto/LilSwap](https://github.com/InkCrypto/LilSwap)
+
 
 ## Core Advantages
 * **0% Execution Fees on Debt Swaps:** We eliminated the standard ~0.05% fee, meaning you only pay network gas.
@@ -32,6 +36,8 @@ LilSwap is a high-performance, non-custodial interface built for managing decent
    ```
 
 ## Roadmap
-* **Phase 1 (Live Now):** Foundations, Multi-Chain support, and Debt Swaps.
-* **Phase 2:** Collateral Swaps implementation.
-* **Phase 3:** CoW Protocol integration for MEV protection.
+* **Phase 1 (Complete):** Foundations, Multi-Chain support, and Debt Swaps.
+* **Phase 2 (In Progress):** Collateral Swaps implementation and expansion to all Aave V3 networks.
+* **Phase 3 (Ongoing):** CoW Protocol integration for MEV protection and Advanced Analytics.
+
+
