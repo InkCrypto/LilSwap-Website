@@ -37,7 +37,7 @@ const HowItWorks = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
                     {/* Connecting Line for Desktop */}
-                    <div className="hidden md:block absolute top-[44px] left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-primary/20 via-blue-500/20 to-accent-cyan/20 z-0"></div>
+                    <div className="hidden md:block absolute top-11 left-[15%] right-[15%] h-0.5 bg-linear-to-r from-primary/20 via-blue-500/20 to-accent-cyan/20 z-0"></div>
 
                     {steps.map((step, index) => (
                         <div key={index} className="relative z-10 group flex flex-col items-center text-center">
@@ -55,7 +55,7 @@ const HowItWorks = () => {
                             </div>
 
                             <h3 className="text-xl font-bold mb-3 dark:text-white">{step.title}</h3>
-                            <p className="text-slate-600 dark:text-slate-400 text-sm max-w-[280px]">
+                            <p className="text-slate-600 dark:text-slate-400 text-sm max-w-70">
                                 {step.desc}
                             </p>
                         </div>

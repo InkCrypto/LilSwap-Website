@@ -37,7 +37,7 @@ const Efficiency = () => {
 
                         <ul className="space-y-6">
                             <li className="flex items-start gap-4">
-                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-accent-cyan/10 flex items-center justify-center">
+                                <div className="shrink-0 w-10 h-10 rounded-full bg-accent-cyan/10 flex items-center justify-center">
                                     <span className="material-symbols-outlined text-accent-cyan">savings</span>
                                 </div>
                                 <div>
@@ -46,7 +46,7 @@ const Efficiency = () => {
                                 </div>
                             </li>
                             <li className="flex items-start gap-4">
-                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                <div className="shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                     <span className="material-symbols-outlined text-primary">price_check</span>
                                 </div>
                                 <div>
@@ -89,7 +89,7 @@ const Efficiency = () => {
 
                             <div className="grid grid-cols-2 gap-4 mb-8">
                                 <div className="bg-primary/20 border border-primary/30 rounded-xl p-4 flex flex-col items-center justify-center relative overflow-hidden text-center shadow-[0_0_15px_rgba(168,85,247,0.15)]">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent pointer-events-none"></div>
+                                    <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-transparent pointer-events-none"></div>
                                     <div className="text-xs text-white mb-2 font-bold flex items-center justify-center gap-1 relative z-10">
                                         {t('comparison.table.lilswap')} <span className="bg-primary/30 text-primary-200 px-1.5 py-0.5 rounded text-[10px] uppercase">{isDebtSwap ? "0.00%" : "0.10%"}</span>
                                     </div>

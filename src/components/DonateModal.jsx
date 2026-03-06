@@ -25,7 +25,7 @@ export const DonateModal = ({ isOpen, onClose }) => {
             <div className="p-4 sm:p-5 flex flex-col gap-6">
 
                 {/* Rewards Info */}
-                <div className="bg-gradient-to-br from-primary/10 via-fuchsia-500/10 to-transparent border border-primary/20 rounded-xl p-4 flex flex-col gap-2">
+                <div className="bg-linear-to-br from-primary/10 via-fuchsia-500/10 to-transparent border border-primary/20 rounded-xl p-4 flex flex-col gap-2">
                     <div className="flex items-center gap-2 text-primary">
                         <span className="text-xl">🏆</span>
                         <span className="text-sm font-extrabold uppercase tracking-wider">{t('donateModal.rewardsTitle')}</span>

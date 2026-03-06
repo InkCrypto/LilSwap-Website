@@ -22,10 +22,10 @@ const DashboardPreview = () => {
                             <div className="w-3 h-3 rounded-full bg-yellow-400/80"></div>
                             <div className="w-3 h-3 rounded-full bg-green-400/80"></div>
                         </div>
-                        <div className="flex-1 bg-white dark:bg-[#0b1221] rounded-md py-1.5 px-3 h-7"></div>
+                        <div className="flex-1 bg-white dark:bg-background-dark rounded-md py-1.5 px-3 h-7"></div>
                     </div>
 
-                    <div className="p-6 bg-background-light dark:bg-background-dark min-h-[500px]">
+                    <div className="p-6 bg-background-light dark:bg-background-dark min-h-125">
                         <div className="flex justify-between items-center mb-8">
                             <div className="text-xl font-bold flex items-center gap-2 dark:text-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
@@ -72,7 +72,7 @@ const DashboardPreview = () => {
                                 <div>
                                     <h4 className="text-xs text-slate-500 uppercase font-bold mb-4">{t('dashboard.supplies')}</h4>
                                     <div className="space-y-3">
-                                        <div className="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-[#0b1221] border border-border-light dark:border-border-dark hover:border-primary/30 transition-colors">
+                                        <div className="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-background-dark border border-border-light dark:border-border-dark hover:border-primary/30 transition-colors">
                                             <div className="flex items-center gap-3">
                                                 <div className="w-8 h-8 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1 border border-slate-100 dark:border-slate-700">
                                                     <img src="/icons/tokens/usdc.svg" alt="USDC" className="w-full h-full object-contain" />
@@ -93,7 +93,7 @@ const DashboardPreview = () => {
                                 <div>
                                     <h4 className="text-xs text-slate-500 uppercase font-bold mb-4">{t('dashboard.borrows')}</h4>
                                     <div className="space-y-3">
-                                        <div className="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-[#0b1221] border border-border-light dark:border-border-dark">
+                                        <div className="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-background-dark border border-border-light dark:border-border-dark">
                                             <div className="flex items-center gap-3">
                                                 <div className="w-8 h-8 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1 border border-slate-100 dark:border-slate-700">
                                                     <img src="/icons/tokens/weth.svg" alt="WETH" className="w-full h-full object-contain" />
@@ -109,7 +109,7 @@ const DashboardPreview = () => {
                                             </button>
                                         </div>
 
-                                        <div className="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-[#0b1221] border border-border-light dark:border-border-dark">
+                                        <div className="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-background-dark border border-border-light dark:border-border-dark">
                                             <div className="flex items-center gap-3">
                                                 <div className="w-8 h-8 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center p-1 border border-slate-100 dark:border-slate-700">
                                                     <img src="/icons/tokens/wbtc.svg" alt="WBTC" className="w-full h-full object-contain" />

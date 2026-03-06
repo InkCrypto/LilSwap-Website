@@ -51,7 +51,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-white dark:bg-[#0A0516] transition-colors duration-300 flex flex-col">
         <AnalyticsTracker />
-        <main className="flex-grow flex flex-col">
+        <main className="grow flex flex-col">
           <Routes>
             <Route path="/" element={<Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />} />
             <Route path="/docs" element={<Docs />} />
