@@ -83,6 +83,19 @@
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
+@keyframes bounce-horizontal {
+    0%, 100% {
+        transform: translateX(0) rotate(180deg);
+    }
+    50% {
+        transform: translateX(-6px) rotate(180deg);
+    }
+}
+
+.animate-bounce-horizontal {
+    animation: bounce-horizontal 2s infinite;
+}
+
 @keyframes breathe {
 
     0%,

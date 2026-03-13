@@ -70,14 +70,24 @@ const Footer = ({ isDarkMode, toggleDarkMode }) => {
                             </button>
                         </div>
 
-                        <div className="mt-4">
+                        <div className="mt-4 flex items-center gap-4">
                             <button
                                 onClick={() => setIsDonateOpen(true)}
-                                className="flex items-center gap-1.5 text-slate-400 hover:text-primary transition-colors text-sm font-medium group"
+                                className="flex items-center gap-1.5 text-slate-400 hover:text-primary transition-colors text-sm font-medium group shrink-0"
                             >
                                 <Coffee className="w-4 h-4 group-hover:rotate-12 transition-transform" />
                                 {t('footer.donate')}
                             </button>
+                            
+                            <div className="flex items-center gap-0.5">
+                                <span className="material-symbols-outlined text-[18px] text-primary/60 dark:text-accent-cyan/70 animate-bounce-horizontal">
+                                    arrow_right_alt
+                                </span>
+                                
+                                <div className="flex items-center px-2 py-0.5 rounded-full bg-primary/5 dark:bg-accent-cyan/10 text-[10px] font-bold text-primary dark:text-accent-cyan uppercase tracking-wider whitespace-nowrap">
+                                    10% off fees
+                                </div>
+                            </div>
                         </div>
                     </div>
 

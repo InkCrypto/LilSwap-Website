@@ -49,7 +49,7 @@ const Hero = () => {
                         <div className="text-[10px] sm:text-sm font-semibold text-slate-500 dark:text-slate-400 mt-1 uppercase tracking-wider">{t('hero.stats.maxSavings')}</div>
                     </div>
                     <div>
-                        <div className="text-2xl sm:text-3xl font-display font-bold text-primary whitespace-nowrap">0%</div>
+                        <div className="text-2xl sm:text-3xl font-display font-bold text-primary whitespace-nowrap">Ultra Low</div>
                         <div className="text-[10px] sm:text-sm font-semibold text-slate-500 dark:text-slate-400 mt-1 uppercase tracking-wider">{t('hero.stats.executionFee')}</div>
                     </div>
                     <div>

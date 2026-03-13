@@ -16,9 +16,9 @@ const Efficiency = () => {
 
     // Fees calculation
     // Collateral Swap: Official = 25 BPS Protocol + 5 BPS Execution (0.30%) | LilSwap = 10 BPS (0.10%)
-    // Debt Swap: Official = 0 BPS Protocol + ~5 BPS Execution (0.05%) | LilSwap = 0 BPS (0.00%)
+    // Debt Swap: Official = 0 BPS Protocol + ~5 BPS Execution (0.05%) | LilSwap = 0.02%
     const officialFee = isDebtSwap ? (tradeSize * 0.0005) : (tradeSize * 0.0030);
-    const lilSwapFee = isDebtSwap ? 0 : (tradeSize * 0.0010);
+    const lilSwapFee = isDebtSwap ? (tradeSize * 0.0002) : (tradeSize * 0.0010);
 
     const savings = officialFee - lilSwapFee;
     const savingsPercentage = officialFee > 0 ? Math.round((savings / officialFee) * 100) : 0;
@@ -91,7 +91,7 @@ const Efficiency = () => {
                                 <div className="bg-primary/20 border border-primary/30 rounded-xl p-4 flex flex-col items-center justify-center relative overflow-hidden text-center shadow-[0_0_15px_rgba(168,85,247,0.15)]">
                                     <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-transparent pointer-events-none"></div>
                                     <div className="text-xs text-white mb-2 font-bold flex items-center justify-center gap-1 relative z-10">
-                                        {t('comparison.table.lilswap')} <span className="bg-primary/30 text-primary-200 px-1.5 py-0.5 rounded text-[10px] uppercase">{isDebtSwap ? "0.00%" : "0.10%"}</span>
+                                        {t('comparison.table.lilswap')} <span className="bg-primary/30 text-primary-200 px-1.5 py-0.5 rounded text-[10px] uppercase">{isDebtSwap ? "0.02%" : "0.10%"}</span>
                                     </div>
                                     <div className="text-2xl font-display font-bold text-white relative z-10">
                                         ${lilSwapFee.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
