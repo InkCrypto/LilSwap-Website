@@ -34,7 +34,7 @@ function Home({ isDarkMode, toggleDarkMode }) {
                 </div>
                 <CTA />
             </main>
-            <Footer isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+            <Footer />
         </>
     );
 }

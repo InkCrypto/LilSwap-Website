@@ -198,7 +198,8 @@
         "tagline": "A interface definitiva para usuários hardcore de DeFi.",
         "resources": {
             "title": "Recursos",
-            "docs": "Documentação",
+            "github": "GitHub",
+            "defillama": "DeFiLlama",
             "api": "API",
             "soon": "Em Breve"
         },

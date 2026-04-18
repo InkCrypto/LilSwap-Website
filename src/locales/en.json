@@ -198,7 +198,8 @@
         "tagline": "The ultimate interface for DeFi power users.",
         "resources": {
             "title": "Resources",
-            "docs": "Documentation",
+            "github": "GitHub",
+            "defillama": "DeFiLlama",
             "api": "API",
             "soon": "Soon"
         },
