@@ -8,7 +8,11 @@
     "build": "vite build && node prerender.js",
     "prerender": "node prerender.js",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release:patch": "npm version patch",
+    "release:minor": "npm version minor",
+    "release:push": "git push origin main",
+    "release:deploy": "git push origin --tags"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",
