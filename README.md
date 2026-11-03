@@ -1,6 +1,6 @@
 # LilSwap Website
 
-This is the promotional website for [LilSwap](https://lilswap.xyz), a high-performance, non-custodial interface built for managing decentralized lending positions on Aave v3. It acts as a lean execution layer designed to bypass heavy protocol adapter fees and optimize transaction routing.
+This is the promotional website for [LilSwap](https://lilswap.xyz), a non-custodial DEX aggregator for token swaps and cross-chain bridges across multiple networks, with native Aave collateral and debt swaps that bypass heavy protocol adapter fees.
 
 **App URL:** [app.lilswap.xyz](https://app.lilswap.xyz)
 **App Repository:** [github.com/InkCrypto/LilSwap](https://github.com/InkCrypto/LilSwap)
@@ -9,7 +9,7 @@ This is the promotional website for [LilSwap](https://lilswap.xyz), a high-perfo
 ## Core Advantages
 * **0% Execution Fees on Debt Swaps:** We eliminated the standard ~0.05% fee, meaning you only pay network gas.
 * **Up to 67% Max Savings:** Highly efficient routing for collateral swaps compared to standard UI adapters.
-* **Direct Smart Contract Execution:** Interact directly with Aave V3 smart contracts—no middlemen, no custodial risk.
+* **Direct Smart Contract Execution:** Aave swaps interact directly with Aave smart contracts, no middlemen, no custodial risk.
 * **Zero TVL:** Your assets remain securely within the audited Aave ecosystem at all times.
 
 ## Tech Stack
@@ -37,7 +37,7 @@ This is the promotional website for [LilSwap](https://lilswap.xyz), a high-perfo
 
 ## Roadmap
 * **Phase 1 (Complete):** Foundations, Multi-Chain support, and Debt Swaps.
-* **Phase 2 (In Progress):** Collateral Swaps implementation and expansion to all Aave V3 networks.
+* **Phase 2 (In Progress):** Collateral Swaps implementation and expansion to all Aave networks.
 * **Phase 3 (Ongoing):** CoW Protocol integration for MEV protection and Advanced Analytics.
 
 

@@ -15,7 +15,7 @@
         "accessApp": "Access App",
         "docs": "Docs",
         "soon": "Soon",
-        "trustMessage": "LilSwap does not custody funds and introduces no additional smart contract risk. All transactions interact directly with the official Aave protocol contracts.",
+        "trustMessage": "LilSwap does not custody funds and introduces no additional smart contract risk. Aave swaps interact directly with the official Aave protocol contracts.",
         "stats": {
             "maxSavings": "Real Savings",
             "executionFee": "Service Fees",
@@ -173,8 +173,8 @@
             "desc": "Not at all. There is no 'migration' or deposit needed. Since LilSwap operates as a direct interface for the Aave V3 protocol, your existing positions will show up automatically the moment you connect your wallet. You can start optimizing your debt and collateral instantly without moving a single cent."
         },
         "q4": {
-            "title": "Is LilSwap a general-purpose token aggregator?",
-            "desc": "No. While standard aggregators are designed for swapping any tokens in your wallet, LilSwap is a specialized tool built exclusively for Aave V3 positions. We focus solely on converting debt and collateral within the protocol, providing highly optimized execution paths that general-purpose aggregators simply aren't designed to handle."
+            "title": "Is LilSwap only for Aave positions?",
+            "desc": "No. LilSwap is a DEX aggregator for token swaps and cross-chain bridges across multiple networks. It also offers native Aave collateral and debt swaps, where it connects directly to the protocol for lower fees."
         },
         "q5": {
             "title": "What are the service fees on LilSwap?",

@@ -15,7 +15,7 @@
         "accessApp": "Acessar App",
         "docs": "Docs",
         "soon": "Em Breve",
-        "trustMessage": "A LilSwap não custodia seus fundos e não introduz novos riscos de smart contract. Todas as operações utilizam exclusivamente os contratos oficiais do protocolo Aave.",
+        "trustMessage": "A LilSwap não custodia seus fundos e não introduz novos riscos de smart contract. Os swaps na Aave interagem diretamente com os contratos oficiais do protocolo Aave.",
         "stats": {
             "maxSavings": "Economia Real",
             "executionFee": "Taxas de Serviço",
@@ -173,8 +173,8 @@
             "desc": "De forma alguma. Não é necessário fazer nenhum tipo de 'migração' ou depósito. Como a LilSwap opera como uma interface direta para o protocolo Aave V3, suas posições já existentes aparecerão automaticamente assim que você conectar sua carteira. Você pode começar a otimizar sua dívida e colateral instantaneamente sem precisar mover seus fundos."
         },
         "q4": {
-            "title": "A LilSwap é um agregador comum? Posso trocar qualquer token da minha carteira?",
-            "desc": "Não. Diferente de um agregador genérico onde você troca um token por outro na sua carteira, a LilSwap é uma ferramenta cirúrgica feita apenas para posições na Aave V3. Nosso foco é converter exclusivamente dívidas e colaterais entre si dentro do protocolo, garantindo a rota mais eficiente e barata que ferramentas comuns não conseguem oferecer."
+            "title": "A LilSwap é só para posições na Aave?",
+            "desc": "Não. A LilSwap é um agregador DEX para swaps de tokens e bridges cross-chain em várias redes. Ela também oferece swaps nativos de colateral e dívida na Aave, conectando-se diretamente ao protocolo para cobrar taxas menores."
         },
         "q5": {
             "title": "Qual o valor das taxas de serviço?",
